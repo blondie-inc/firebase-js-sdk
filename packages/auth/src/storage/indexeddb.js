@@ -346,11 +346,12 @@ fireauth.storage.IndexedDB.prototype.initializeDbAndRun_ =
  * @return {boolean} Whether indexedDB is available or not.
  */
 fireauth.storage.IndexedDB.isAvailable = function() {
-  try {
-    return !!goog.global['indexedDB'];
-  } catch (e) {
+  console.log('[--- indexeddb.js:349 ---]', 'is indexeddb available?');
+  // try {
+  //   return !!goog.global['indexedDB'];
+  // } catch (e) {
     return false;
-  }
+  // }
 };
 
 
